@@ -1,0 +1,12 @@
+    <div>
+    <from action="/" class="my-form" novalidate>
+        <label for="name">Név:</label>
+        <input data-ng-model="user.name" type="text" id="name">
+        <br>
+        <label for="email">Email:</label>
+        <input data-ng-model="user.email" type="text" id="text" ng-model-options="{ updateOn: 'blur' }">
+        <br>
+        <div>Egyenleg = {{ egyenleg | currency }}</div>
+        <button type="submit">regisztráció</button>
+    </from> 
+    </div>
